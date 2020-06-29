@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+* {
+  font-family: 'Balsamiq Sans', cursive !important;
+  margin: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: none;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+#play-btn {
+  padding: 5px 15px;
+  background-color: lightgreen;
+}
+
+.video-data.inactive {
+  display: none;
+}
+
+.video-data {
+  max-width: 800px;
+}
+
+.video-data .top-bar {
+  width: 320px;
+  position: relative;
+}
+
+.video-data .top-bar #correct {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  color: #4f8a4f;
+}
+
+.video-data .title {
+  display: block;
+}
+
+.video-data .title.inactive {
+  display: none;
+}
+
+.video-data .video-player {
+  position: relative;
+  width: 320px;
+}
+
+.video-data .video-player .block {
+  position: absolute;
+  background: grey;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-data .video-player .block.inactive {
+  opacity: 0%;
+}
+
+.video-data .video-player .block .time {
+  color: white;
+  font-size: 3.2em;
+}
+
+.video-data .video-player .block .time.inactive {
+  color: rgba(255, 255, 255, 0);
+}
+
+.video-data .video-player.correct {
+  border: 3px solid lightgreen;
+}
+
+.video-data input {
+  margin-top: 10px;
+  width: 310px;
+  padding: 4px 5px;
+}
+
+.video-data .song-info {
+  display: block;
+  width: 320px;
+  line-height: 1.5em;
+}
+
+.video-data .song-info.inactive {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

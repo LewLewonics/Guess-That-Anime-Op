@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+* {
+    font-family: 'Balsamiq Sans', cursive !important;
+    margin: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        display: none;
+    }
+    
+    li:hover {
+        cursor: pointer;
+    }
+}
+
+#play-btn {
+    padding: 5px 15px;
+    background-color: lightgreen;
+}
+
+.video-data.inactive {
+    display: none;
+}
+
+.video-data {
+    max-width: 800px;
+    .top-bar {
+        width: 320px;
+        position: relative;
+        #correct {
+            position: absolute;
+            top: -18px;
+            right: 0;
+            color: rgb(79, 138, 79);
+        }
+    }
+    .title {
+        display: block;
+    }
+    .title.inactive {
+        display: none;
+    }
+    .video-player {
+        position: relative;
+        width: 320px;
+    
+        .block {
+            position: absolute;
+            background: grey;
+            // opacity: 0%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block.inactive {
+            opacity: 0%;
+        }
+        .block .time {
+            color: white;
+            font-size: 3.2em;
+        }
+        .block .time.inactive {
+            color: rgba(255,255,255,0);
+        }
+    }
+    .video-player.correct {
+        border: 3px solid lightgreen;
+    }
+    input {
+        margin-top: 10px;
+        width: 310px;
+        padding: 4px 5px;
+    }
+    .song-info {
+        display: block;
+        width: 320px;
+        line-height: 1.5em;
+    }
+    .song-info.inactive {
+        display: none;
+    }
+}

@@ -30,6 +30,10 @@ ul {
     background-color: lightgreen;
 }
 
+#play-btn:hover {
+    cursor: pointer;
+}
+
 .video-data.inactive {
     display: none;
 }
